@@ -1,0 +1,57 @@
+13:07:17 INFO   MainThread:121 Node with id 4 is running...
+13:07:17 INFO   MainThread:130 Configure the status_dictionary global variable...
+13:07:17 INFO   MainThread:142 Thread dead_thread_1 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_2 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_3 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_4 started
+13:07:17 INFO   MainThread:145 status_dictionary:
+{'node-1': [0, True],
+ 'node-2': [0, True],
+ 'node-3': [0, True],
+ 'node-4': [0, True]}
+13:07:17 INFO   MainThread:146 Done configuring the status_dictionary...
+13:07:17 INFO   MainThread:148 Executing the listening procedure...
+13:07:17 INFO   listening_thread:62  Initiating socket...
+13:07:17 INFO   MainThread:153 Executing the sending procedure...
+13:07:18 INFO   listening_thread:73  Receive message from node-1...
+13:07:18 INFO   listening_thread:74  Incoming message:
+{'node-1': [1, True],
+ 'node-2': [0, True],
+ 'node-3': [0, True],
+ 'node-4': [0, True]}
+13:07:18 INFO   listening_thread:84  Thread dead_thread_node-1 started
+13:07:18 INFO   listening_thread:73  Receive message from node-2...
+13:07:18 INFO   listening_thread:74  Incoming message:
+{'node-1': [0, True],
+ 'node-2': [1, True],
+ 'node-3': [1, True],
+ 'node-4': [0, True]}
+13:07:18 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:18 INFO   sending_thread:31  Increase heartbeat node-4:
+{'node-1': [1, True],
+ 'node-2': [1, True],
+ 'node-3': [1, True],
+ 'node-4': [1, True]}
+13:07:18 INFO   sending_thread:36  Determining which node to send...
+13:07:18 INFO   sending_thread:45  Send messages to node-3 and node-1
+13:07:19 INFO   listening_thread:73  Receive message from node-1...
+13:07:19 INFO   listening_thread:74  Incoming message:
+{'node-1': [2, True],
+ 'node-2': [1, True],
+ 'node-3': [1, True],
+ 'node-4': [1, True]}
+13:07:19 INFO   listening_thread:84  Thread dead_thread_node-1 started
+13:07:19 INFO   listening_thread:73  Receive message from node-2...
+13:07:19 INFO   listening_thread:74  Incoming message:
+{'node-1': [1, True],
+ 'node-2': [2, True],
+ 'node-3': [1, True],
+ 'node-4': [0, False]}
+13:07:19 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:19 INFO   sending_thread:31  Increase heartbeat node-4:
+{'node-1': [2, True],
+ 'node-2': [2, True],
+ 'node-3': [1, True],
+ 'node-4': [2, True]}
+13:07:19 INFO   sending_thread:36  Determining which node to send...
+13:07:19 INFO   sending_thread:45  Send messages to node-2 and node-3

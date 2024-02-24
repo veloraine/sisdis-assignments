@@ -1,0 +1,13 @@
+/.idea/*
+/logs/city.txt
+/logs/general1.txt
+/logs/general2.txt
+/logs/general3.txt
+/logs/supreme_general.txt
+/experiment/
+/tests/logs/city.txt
+/tests/logs/general1.txt
+/tests/logs/general2.txt
+/tests/logs/general3.txt
+/tests/logs/supreme_general.txt
+/tests/.pytest_cache/

@@ -1,0 +1,179 @@
+13:07:17 INFO   MainThread:121 Node with id 1 is running...
+13:07:17 INFO   MainThread:130 Configure the status_dictionary global variable...
+13:07:17 INFO   MainThread:142 Thread dead_thread_1 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_2 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_3 started
+13:07:17 INFO   MainThread:142 Thread dead_thread_4 started
+13:07:17 INFO   MainThread:145 status_dictionary:
+{'node-1': [0, True],
+ 'node-2': [0, True],
+ 'node-3': [0, True],
+ 'node-4': [0, True]}
+13:07:17 INFO   MainThread:146 Done configuring the status_dictionary...
+13:07:17 INFO   MainThread:148 Executing the listening procedure...
+13:07:17 INFO   listening_thread:62  Initiating socket...
+13:07:17 INFO   MainThread:153 Executing the sending procedure...
+13:07:18 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [1, True],
+ 'node-2': [0, True],
+ 'node-3': [0, True],
+ 'node-4': [0, True]}
+13:07:18 INFO   sending_thread:36  Determining which node to send...
+13:07:18 INFO   sending_thread:45  Send messages to node-4 and node-2
+13:07:18 INFO   listening_thread:73  Receive message from node-2...
+13:07:18 INFO   listening_thread:74  Incoming message:
+{'node-1': [0, True],
+ 'node-2': [1, True],
+ 'node-3': [0, True],
+ 'node-4': [0, True]}
+13:07:18 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:18 INFO   listening_thread:73  Receive message from node-3...
+13:07:18 INFO   listening_thread:74  Incoming message:
+{'node-1': [0, True],
+ 'node-2': [0, True],
+ 'node-3': [1, True],
+ 'node-4': [0, True]}
+13:07:18 INFO   listening_thread:84  Thread dead_thread_node-3 started
+13:07:18 INFO   listening_thread:73  Receive message from node-4...
+13:07:18 INFO   listening_thread:74  Incoming message:
+{'node-1': [1, True],
+ 'node-2': [1, True],
+ 'node-3': [1, True],
+ 'node-4': [1, True]}
+13:07:18 INFO   listening_thread:84  Thread dead_thread_node-4 started
+13:07:19 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [2, True],
+ 'node-2': [1, True],
+ 'node-3': [1, True],
+ 'node-4': [1, True]}
+13:07:19 INFO   sending_thread:36  Determining which node to send...
+13:07:19 INFO   sending_thread:45  Send messages to node-2 and node-4
+13:07:19 INFO   listening_thread:73  Receive message from node-3...
+13:07:19 INFO   listening_thread:74  Incoming message:
+{'node-1': [1, True],
+ 'node-2': [1, True],
+ 'node-3': [2, True],
+ 'node-4': [1, True]}
+13:07:19 INFO   listening_thread:84  Thread dead_thread_node-3 started
+13:07:20 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [3, True],
+ 'node-2': [1, True],
+ 'node-3': [2, True],
+ 'node-4': [1, True]}
+13:07:20 INFO   sending_thread:36  Determining which node to send...
+13:07:20 INFO   sending_thread:45  Send messages to node-2 and node-3
+13:07:20 INFO   dead_thread_node-2:94  This node become a fault: node-2
+13:07:20 INFO   dead_thread_node-2:95  Node fault status_dictionary:
+{'node-1': [3, True],
+ 'node-2': [1, False],
+ 'node-3': [2, True],
+ 'node-4': [1, True]}
+13:07:20 INFO   listening_thread:73  Receive message from node-3...
+13:07:20 INFO   listening_thread:74  Incoming message:
+{'node-1': [2, True],
+ 'node-2': [2, True],
+ 'node-3': [3, True],
+ 'node-4': [2, True]}
+13:07:20 INFO   listening_thread:84  Thread dead_thread_node-3 started
+13:07:21 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [4, True],
+ 'node-2': [2, True],
+ 'node-3': [3, True],
+ 'node-4': [2, True]}
+13:07:21 INFO   sending_thread:36  Determining which node to send...
+13:07:21 INFO   sending_thread:45  Send messages to node-2 and node-4
+13:07:21 INFO   listening_thread:73  Receive message from node-2...
+13:07:21 INFO   listening_thread:74  Incoming message:
+{'node-1': [4, True],
+ 'node-2': [4, True],
+ 'node-3': [4, True],
+ 'node-4': [2, False]}
+13:07:21 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:22 INFO   listening_thread:73  Receive message from node-3...
+13:07:22 INFO   listening_thread:74  Incoming message:
+{'node-1': [3, False],
+ 'node-2': [3, False],
+ 'node-3': [5, True],
+ 'node-4': [2, False]}
+13:07:22 INFO   listening_thread:84  Thread dead_thread_node-3 started
+13:07:22 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [5, True],
+ 'node-2': [4, True],
+ 'node-3': [5, True],
+ 'node-4': [2, True]}
+13:07:22 INFO   sending_thread:36  Determining which node to send...
+13:07:22 INFO   sending_thread:45  Send messages to node-4 and node-2
+13:07:23 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [6, True],
+ 'node-2': [4, True],
+ 'node-3': [5, True],
+ 'node-4': [2, True]}
+13:07:23 INFO   sending_thread:36  Determining which node to send...
+13:07:23 INFO   sending_thread:45  Send messages to node-3 and node-2
+13:07:23 INFO   dead_thread_node-2:94  This node become a fault: node-2
+13:07:23 INFO   dead_thread_node-2:95  Node fault status_dictionary:
+{'node-1': [6, True],
+ 'node-2': [4, False],
+ 'node-3': [5, True],
+ 'node-4': [2, True]}
+13:07:23 INFO   listening_thread:73  Receive message from node-2...
+13:07:23 INFO   listening_thread:74  Incoming message:
+{'node-1': [5, True],
+ 'node-2': [6, True],
+ 'node-3': [5, True],
+ 'node-4': [2, False]}
+13:07:23 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:24 INFO   dead_thread_node-3:94  This node become a fault: node-3
+13:07:24 INFO   dead_thread_node-3:95  Node fault status_dictionary:
+{'node-1': [6, True],
+ 'node-2': [6, True],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:24 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [7, True],
+ 'node-2': [6, True],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:24 INFO   sending_thread:36  Determining which node to send...
+13:07:24 INFO   sending_thread:45  Send messages to node-4 and node-3
+13:07:24 INFO   listening_thread:73  Receive message from node-2...
+13:07:24 INFO   listening_thread:74  Incoming message:
+{'node-1': [6, True],
+ 'node-2': [7, True],
+ 'node-3': [5, True],
+ 'node-4': [2, False]}
+13:07:24 INFO   listening_thread:84  Thread dead_thread_node-2 started
+13:07:25 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [8, True],
+ 'node-2': [7, True],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:25 INFO   sending_thread:36  Determining which node to send...
+13:07:25 INFO   sending_thread:45  Send messages to node-3 and node-2
+13:07:26 INFO   dead_thread_node-2:94  This node become a fault: node-2
+13:07:26 INFO   dead_thread_node-2:95  Node fault status_dictionary:
+{'node-1': [8, True],
+ 'node-2': [7, False],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:26 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [9, True],
+ 'node-2': [7, False],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:26 INFO   sending_thread:36  Determining which node to send...
+13:07:26 INFO   sending_thread:45  Send messages to node-3 and node-2
+13:07:27 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [10, True],
+ 'node-2': [7, False],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:27 INFO   sending_thread:36  Determining which node to send...
+13:07:27 INFO   sending_thread:45  Send messages to node-2 and node-3
+13:07:28 INFO   sending_thread:31  Increase heartbeat node-1:
+{'node-1': [11, True],
+ 'node-2': [7, False],
+ 'node-3': [5, False],
+ 'node-4': [2, True]}
+13:07:28 INFO   sending_thread:36  Determining which node to send...
+13:07:28 INFO   sending_thread:45  Send messages to node-3 and node-2
